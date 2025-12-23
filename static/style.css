@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #020617, #0f172a, #020617);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e7eb;
+}
+
+/* Main Card */
+.container {
+  background: rgba(2, 6, 23, 0.9);
+  padding: 35px;
+  width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 0 40px rgba(56, 189, 248, 0.35);
+  text-align: center;
+}
+
+/* Title */
+.container h1 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.container p {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 25px;
+}
+
+/* Upload Box */
+.upload-box {
+  border: 2px dashed #38bdf8;
+  padding: 25px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.upload-box:hover {
+  background: rgba(56, 189, 248, 0.05);
+}
+
+/* File Input */
+input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  background: #020617;
+  border: 1px solid #334155;
+  color: #cbd5f5;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Button */
+button {
+  margin-top: 20px;
+  padding: 12px;
+  width: 100%;
+  background: linear-gradient(135deg, #38bdf8, #22d3ee);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #020617;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px #38bdf8;
+}
+
+/* Result */
+.result {
+  margin-top: 25px;
+  padding: 15px;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 12px;
+  font-size: 18px;
+  color: #22d3ee;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.result span {
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #64748b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

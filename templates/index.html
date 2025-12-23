@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hand Gesture Recognition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+  <h1>✋ Hand Gesture Recognition</h1>
+  <p>Upload a hand image or video to identify the gesture using Machine Learning</p>
+
+  <form method="POST" enctype="multipart/form-data">
+    <div class="upload-box">
+      <input type="file" name="file" accept="image/*,video/*" required>
+    </div>
+
+    <button type="submit">Upload & Detect Gesture</button>
+  </form>
+
+  {% if result %}
+  <div class="result">
+    Detected Gesture: <span>{{ result }}</span>
+  </div>
+  {% endif %}
+
+  <div class="footer">
+    ML Task-04 | Hand Gesture Recognition
+  </div>
+</div>
+
+</body>
+</html>
